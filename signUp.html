@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign UP</title>
+    <link rel="stylesheet" href="./plugin/bootstap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <main class="container-fluid p-0">
+      <section class="row m-0">
+        <div class="col-12 p-0 background-img overflow-auto">
+          <div class="fadeinout welcome">Welcome to Web application</div>
+          <div class="card login-body mt-1 bg-transparent border-0 fade-in">
+            <div class="card-body">
+              <h4 class="text-dark">SIGN UP</h4>
+              <form action="" id="signup" class="form">
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-user"></span>First Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control m-1"
+                    id="username"
+                    placeholder="Enter your name"
+                    name="username"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-user"></span> Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control m-1"
+                    id="lname"
+                    placeholder="Enter your user ID"
+                    name="lname"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-phone"></span> Mobile</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control m-1"
+                    id="phone"
+                    placeholder="Enter your number"
+                    name="phone"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-envelope"></span> Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control m-1"
+                    id="email"
+                    placeholder="Enter your E-Mail ID"
+                    name="email"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-unlock-alt"></span> Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control m-1"
+                    name="password"
+                    placeholder="Enter your password"
+                    id="password"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-unlock-alt"></span> Confirm
+                    Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control m-1"
+                    id="confirm-password"
+                    placeholder="Re-enter the same password"
+                    name="confirm-password"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+
+                <button
+                  id="submit"
+                  class="col-12 signin save-btn mt-3 btn btn-success text-light"
+                >
+                  SIGN UP
+                </button>
+
+                <div class="mt-3 signin text-dark">
+                  Already have an account?
+                  <button
+                    class="col-12 mt-2 btn btn-success text-light"
+                    id="already"
+                  >
+                    LOG IN
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./Js/singup.js"></script>
+  </body>
+</html>

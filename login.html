@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LOG IN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./plugin/bootstap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="row m-0">
+        <div
+          class="col-12 p-0 background-img overflow-auto"
+          style="width: 100vw; height: 100vh"
+        >
+          <div class="fadeinout welcome">Welcome to Web application</div>
+          <div class="card login-body bg-transparent border-0 fade-in">
+            <div class="card-body">
+              <h4 class="text-dark">LOG IN</h4>
+              <form action="" id="signup" class="form">
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-envelope"></span> Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control m-1"
+                    id="email"
+                    placeholder="Enter your E-Mail ID"
+                    name="email"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+                <div class="mt-2 form-field">
+                  <label class="text-dark"
+                    ><span class="fa fa-unlock-alt"></span> Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control m-1"
+                    name="password"
+                    placeholder="Enter your password"
+                    id="password"
+                    required
+                  />
+                  <span class="prblm"></span>
+                </div>
+
+                <button
+                  class="col-12 signin mt-3 btn btn-success text-light"
+                  id="submit"
+                >
+                  LOG IN
+                </button>
+
+                <div class="mt-3 signin text-dark">
+                  Don't have an account yet?
+                  <button
+                    class="col-12 mt-3 btn btn-success text-light"
+                    id="create"
+                  >
+                    CREATE NEW
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>

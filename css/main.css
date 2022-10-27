@@ -1,0 +1,73 @@
+/* error msg color */
+.error {
+  color: red;
+}
+/* .background image */
+.background-img {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.408),
+      rgba(122, 120, 120, 0.506)
+    ),
+    url("/images/lock.jpg");
+  width: 100vw;
+  height: 100vh;
+}
+/* to print the important function  */
+/* sign-up */
+.error::after {
+  content: "*";
+}
+
+/* card  */
+.login-body {
+  width: 20rem;
+  /* margin: auto; */
+  margin-left: 900px;
+  margin-top: 50px;
+}
+/* all button  */
+.btn {
+  background-color: #1b2e76;
+}
+
+/* content blink  */
+.fadeinout {
+  animation: fadeinout 4s infinite;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.welcome {
+  font-family: cursive;
+  font-size: xx-large;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* on load fade in  */
+.fade-in {
+  opacity: 0; /* make things invisible upon start */
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
